@@ -9,7 +9,7 @@
 - [`.remove()`](#remove)
 - [`set()`](#set)
 - [`sorted()`](#sorted)
-
+- [`List Comprehension`](#List_Comprehension )
 
 ---
 
@@ -226,11 +226,64 @@ last_word = max(words)          # 'cherry'
 
 ---
 
-## 學習重點
+## `List Comprehension`
 
-1. **`map()` 要記得轉 `list()`** 才能使用
-2. **`sorted()` 不修改原資料**，`list.sort()` 才會修改
-3. **`set()` 自動去重**，但會變無序
-4. **負索引 `[-1]`, `[-2]`** 很好用
-5. **`.remove()` 返回 `None`**，不要用在表達式中
-6. **組合使用** `sorted(set(data))` 是常見模式
+**用途：** 簡化迴圈的使用來創建list，可以把迴圈和條件濃縮成一行。
+
+**語法：** 
+```python
+    # 基本格式
+    [expression for item in iterable] 
+    # 帶有條件的格式
+    [expression for item in iterable if condition] 
+```
+
+**範例：**
+```python
+
+# 一、列表運算
+
+    # 傳統
+    numbers = [1,2,3,4,5]
+    results = []
+    for i in numbers:
+        results.append(i ** 2)
+    print(results)  # [1,4,9,16,25]
+
+    # list comprehension
+    numbers = [1,2,3,4,5]
+    results = [i ** 2 for i in numbers] # 不用再建立空回圈＋append
+    print(results)  # [1,4,9,16,25]
+
+# 二、字串處理
+
+    # 傳統
+    words = ['apple', 'banana', 'cherry']
+    upper = []
+    for i in words:
+        upper.append(i.upper())
+    print(upper)  # ['APPLE', 'BANANA', 'CHERRY']
+
+    # list comprehension
+    words = ['apple', 'banana', 'cherry']
+    upper = [i.upper() for i in words] # 不用再建立空回圈＋append
+    print(upper)  # ['APPLE', 'BANANA', 'CHERRY']
+
+# 三、加上條件判斷（只要偶數，再平方）
+
+    # 傳統
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    even = []
+    for i in numbers:
+        if i % 2 == 0:
+            even.append(i ** 2)
+    print(even)  # [4,16,36,64,100]
+
+    # list comprehension
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    even = [i ** 2 for i in numbers if i % 2 == 0]
+    print(even)  # [4,16,36,64,100]
+
+```
+
+**相關函數：**`.append()`, `.upper()`, `.lower()` or 建立空list or if等條件式
