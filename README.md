@@ -1,7 +1,7 @@
 ### 題目列表 
 - [x] 表示已完成
-- ★ 表示有建立筆記
-#### - [x] ntroduction 
+★ 表示有建立筆記
+#### [x] ntroduction 
 * - [x] print 'hello, world'
 * - [x] python if-else ★
 * - [x] arithmetic operators
@@ -9,13 +9,13 @@
 * - [x] loops
 * - [x] write a function ★
 * - [x] print function ★
-#### - [ ] Basic Data Types
+#### [ ] Basic Data Types
 * - [x] find the runner-up score!★
 * - [x] nested lists ★
 * - [ ] finding the percentage
 * - [ ] lists
 * - [ ] tuples
-#### - [ ] Strings
+#### [ ] Strings
 * - [ ] String Split and Join
 * - [ ] What's Your Name?
 * - [ ] Mutations
