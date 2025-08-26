@@ -1,5 +1,5 @@
 ### 題目列表 
-- - [x] 表示已完成
+- [x] 表示已完成
 - ★ 表示有建立筆記
 #### - [x] ntroduction 
 * - [x] print 'hello, world'
