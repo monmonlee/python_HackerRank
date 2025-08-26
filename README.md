@@ -30,5 +30,5 @@
 - [] The Minion Game
 - [] Merge the Tools!
 
-- [ ] Mercury
-- [x] Venus
+* - [ ] Mercury
+* - [x] Venus
