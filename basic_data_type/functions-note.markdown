@@ -9,7 +9,7 @@
 - [`.remove()`](#remove)
 - [`set()`](#set)
 - [`sorted()`](#sorted)
-- [`List Comprehension`](#List_Comprehension )
+- [`List_Comprehension`](#List_Comprehension )
 
 ---
 
@@ -226,7 +226,7 @@ last_word = max(words)          # 'cherry'
 
 ---
 
-## `List Comprehension`
+## `List_Comprehension`
 
 **用途：** 簡化迴圈的使用來創建list，可以把迴圈和條件濃縮成一行。
 
@@ -287,3 +287,5 @@ last_word = max(words)          # 'cherry'
 ```
 
 **相關函數：**`.append()`, `.upper()`, `.lower()` or 建立空list or if等條件式
+
+
