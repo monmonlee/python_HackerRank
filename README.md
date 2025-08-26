@@ -29,3 +29,6 @@
 - [] Capitalize!
 - [] The Minion Game
 - [] Merge the Tools!
+
+- [ ] Mercury
+- [x] Venus
