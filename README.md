@@ -12,7 +12,7 @@
 #### - [ ] Basic Data Types
 * - [x] find the runner-up score!★
 * - [x] nested lists ★
-* - [ ] finding the percentage
+* - [x] finding the percentage ★
 * - [ ] lists
 * - [ ] tuples
 #### - [ ] Strings

@@ -9,39 +9,14 @@
 - [`.remove()`](#remove)
 - [`set()`](#set)
 - [`sorted()`](#sorted)
-- [`List_Comprehension`](#List_Comprehension )
-
+- [`List_Comprehension`](#List_Comprehension)
+- [`f-string`](#f-string)
+- [`unpacking`](#unpacking)
 ---
 
 ## `map()`
 
-**用途：** 對序列中的每個元素應用指定函數
-
-**語法：** `map(function, iterable)`
-
-**特性：**
-- 返回 `map object`（迭代器）
-- 懶加載，節省記憶體
-- 一次性使用，消耗後變空
-
-**範例：**
-```python
-# 將字串列表轉換為整數列表
-arr = map(int, ['1', '2', '3'])
-print(list(arr))  # [1, 2, 3]
-
-# 常見用法：處理輸入
-arr = map(int, input().split())
-scores = list(arr)  # 轉成 list 使用
-```
-
-**注意：** `map object` 需要用 `list()` 轉換才能看到內容
-
----
-
-## `sorted()`
-
-**用途：** 對序列中的每個元素應用指定函數
+**用途：** 對序列中的每個元素應用指定函數，和float(), str()的功能一樣，但這些只能處理「單一值」，map()可以逐一處理所有可迭代的物件
 
 **語法：** `map(function, iterable)`
 
@@ -288,4 +263,74 @@ last_word = max(words)          # 'cherry'
 
 **相關函數：**`.append()`, `.upper()`, `.lower()` or 建立空list or if等條件式
 
+---
 
+## `f-string`
+
+**用途：** 格式化工具，將結果轉換成字串固定格式
+
+**語法：** 有很多變化，但框架大概都是`f"{value:格式}"`
+
+
+**基礎的幾款：**
+```python
+name = "ame"
+score = 89.561
+count = 5   
+
+# 基本變數插入
+print(f"my name is {name}")   # my name is ame
+
+# 小數點位數（最常用）
+print(f"score:{score:.2f}") # score:89.56
+
+# 整數
+print(f"score:{score:d}")  # score:89
+
+# 基本字串
+print(f"score:{score:s}")  # score:89[但這裡是字串]
+
+```
+
+**配對函數：** `min()` 找最小值
+
+---
+
+## `unpacking`
+
+**用途：** python 的功能之ㄧ，能透過簡潔的方法將可迭代資料型態裡打包好的資料取出來（在此示範的是list, dict）
+
+**語法：** 有很多變化，但這裡先介紹`*`的用法，`*`會搜集其他剩餘的元素
+
+**語法示範：**
+```python
+names = ['ame', 'ben', 'cathy']
+
+# 1. 傳統指派變數list
+first = names[0]
+second = names[1]
+third = names[2]
+
+# 1.unpacking
+first, second, third = names # 記得資料個數要和變數一樣
+
+# 2.有大量資料時，可以用`*`協助處理
+data = ['Alice', '85.5', '90.0', '78.5']
+
+# 2.傳統作法
+name = data[0] # 'Alice'
+score = data[1:] # ['85.5', '90.0', '78.5']
+
+# 2.使用`*`協助
+name, *rest = data # 結果： name = 'Alice', rest = ['85.5', '90.0', '78.5']
+
+# 3.finding-the-percentage題目裡，先區分 key & value 使用
+
+# input_string = 'alice 89 56 23'
+# 使用迴圈：
+for i in range(n):
+    name, *line = input_string.split() # 結果：['alice', '89', '56', '23']
+
+```
+
+**配對函數：** `min()` 找最小值
