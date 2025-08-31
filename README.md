@@ -9,12 +9,12 @@
 * - [x] loops
 * - [x] write a function ★
 * - [x] print function ★
-#### - [ ] Basic Data Types
+#### - [x] Basic Data Types
 * - [x] find the runner-up score!★
 * - [x] nested lists ★
 * - [x] finding the percentage ★
-* - [ ] lists
-* - [ ] tuples
+* - [x] lists
+* - [x] tuples
 #### - [ ] Strings
 * - [ ] String Split and Join
 * - [ ] What's Your Name?
