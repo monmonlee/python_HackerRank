@@ -211,6 +211,8 @@ last_word = max(words)          # 'cherry'
     [expression for item in iterable] 
     # 帶有條件的格式
     [expression for item in iterable if condition] 
+    # 多重回圈的格式
+    [[a, b] for item in iterable for item-2 in iterable-2 if condition]     
 ```
 
 **範例：**
@@ -258,6 +260,20 @@ last_word = max(words)          # 'cherry'
     numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     even = [i ** 2 for i in numbers if i % 2 == 0]
     print(even)  # [4,16,36,64,100]
+
+# 四、多重回圈 + 條件限制
+
+    # 傳統
+    t = []
+    for i in range(x):
+        for j in range(y):
+            for k in range(z):
+                if x+y+z != n:
+                    t.append(i, j, k)
+    print(t)
+
+    # list comprehension
+    t = [[i, j, k] for i in range(x) for j in range(y) for k in range(z) if i+j+k != n ]
 
 ```
 
