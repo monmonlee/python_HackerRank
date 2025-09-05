@@ -1,9 +1,9 @@
-# Python 語法筆記
+# Python 語法和概念筆記
 
 ## 索引
 
 - [split()+join()](#[split()+join())
-
+- [subtring](#substring)
 ---
 
 ## `split()+join()` (字串組合技)
@@ -33,3 +33,16 @@ if __name__ == '__main__':
 
 ---
 
+## `subtring` (子字串）
+
+**定義：** 字串裡「連續」的部分
+
+**範例：**
+'hello'這個字中，
+ - 'he' is substring
+ - 'llo' is substring
+ - 'ho' is not substring
+
+**常見用法：** 字串處理
+
+---
