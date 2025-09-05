@@ -13,11 +13,12 @@
 * - [x] find the runner-up score!★
 * - [x] nested lists ★
 * - [x] finding the percentage ★
-* - [x] lists
-* - [x] tuples
+* - [x] lists ★
+* - [x] tuples ★
+* - [x] list comprehensions ★
 #### - [ ] Strings
-* - [ ] String Split and Join
-* - [ ] What's Your Name?
+* - [x] String Split and Join
+* - [x] What's Your Name?
 * - [ ] Mutations
 * - [ ] Find a string
 * - [ ] String Validators
