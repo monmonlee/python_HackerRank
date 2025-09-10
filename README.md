@@ -19,8 +19,8 @@
 #### - [ ] Strings
 * - [x] String Split and Join
 * - [x] What's Your Name?
-* - [ ] Mutations
-* - [ ] Find a string
+* - [x] Mutations
+* - [x] Find a string
 * - [ ] String Validators
 * - [ ] Text Alignment
 * - [ ] Text Wrap
